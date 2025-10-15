@@ -96,7 +96,7 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 ## 🧑‍💻 Author
 
-Abinaya Rajasekara — AI/ML Intern, HABB  
+Abinaya Rajasekara — AI/ML Engineer Intern, HABB  
 GitHub: [abinaya-232001](https://github.com/abinaya-232001)
 
 ---
