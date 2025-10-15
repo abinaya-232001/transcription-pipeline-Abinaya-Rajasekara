@@ -52,9 +52,45 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 - Whisper processes the audio.  
 - Returns a JSON response containing the transcription.
 
-**Example Input:** `harvard.wav`  
-**Example Output:**
-```json
-{
-  "text": "The stale smell of old beer lingers..."
-}
+
+📁 Folder Structure
+transcription-pipeline/
+├── app.py                  # FastAPI main application
+├── requirements.txt        # Dependencies
+├── README.md               # Documentation
+├── .gitignore              # Ignored files (venv, cache, etc.)
+└── audio_files/ (optional) # Folder for test audio files
+
+🧠 Errors Faced & Fixes
+<details> <summary>Click to expand</summary>
+Step	Issue	Cause	Solution
+1	Torch not using GPU	CUDA unavailable	Install GPU version
+2	Dependency conflict	sympy version mismatch	Install compatible version: sympy==1.13.1
+3	Whisper not found	ModuleNotFoundError	Install: pip install openai-whisper
+4	App not starting	uvicorn missing	Install FastAPI & Uvicorn: pip install fastapi uvicorn
+5	PowerShell venv issue	Could not activate	Use full path: .venv\Scripts\activate
+6	Pip version warning	Version check error	Ignored (non-critical)
+</details>
+📈 Future Improvements
+<details> <summary>Click to expand</summary>
+
+Real-time streaming transcription
+
+Speaker diarization (multi-voice detection)
+
+Multi-language transcription support
+
+Frontend interface for uploads & display
+
+Cloud deployment (AWS / Azure / Streamlit)
+
+</details>
+🧑‍💻 Author
+
+Abinaya Rajasekara — Intern, HABB
+GitHub: abinaya-232001
+
+✅ Conclusion
+
+This project provides a robust and easy-to-use speech-to-text API.
+With FastAPI and Whisper integration, it supports GPU acceleration for efficient transcription and can be easily extended or deployed in pipelines, dashboards, or cloud environments.
