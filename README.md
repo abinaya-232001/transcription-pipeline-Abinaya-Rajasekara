@@ -55,6 +55,7 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 📁 Folder Structure
 - transcription-pipeline/
+- 
 - app.py                  # FastAPI main application
 = requirements.txt        # Dependencies
 - README.md               # Documentation
