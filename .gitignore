@@ -1,0 +1,17 @@
+# Ignore virtual environments
+.venv/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore audio files and large data
+*.wav
+*.mp3
+audio_files/
+models/
+outputs/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
