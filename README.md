@@ -35,7 +35,6 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 ## ⚙️ Setup Instructions
 
-`bash
 # Clone repository
 git clone https://github.com/abinaya-232001/transcription-pipeline-Abinaya-Rajasekara.git
 cd transcription-pipeline-Abinaya-Rajasekara
