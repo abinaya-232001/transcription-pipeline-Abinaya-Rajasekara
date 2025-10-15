@@ -1,8 +1,9 @@
 # 🎧 Transcription Pipeline - Abinaya Rajasekara (Intern - HABB) ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-0.1.0-green?logo=fastapi&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-blue)
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aD6v5k0lYl0K3ua/giphy.gif" width="600" alt="typing-animation"/>
+  <img src="assets/audio_gif.webp" width="600" alt="Audio transcription animation"/>
 </p>
+
 
 **Speech-to-text API** using **FastAPI**, **Whisper**, and **PyTorch**.  
 Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
