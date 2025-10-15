@@ -55,11 +55,11 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 📁 Folder Structure
 transcription-pipeline/
-├── app.py                  # FastAPI main application
-├── requirements.txt        # Dependencies
-├── README.md               # Documentation
-├── .gitignore              # Ignored files (venv, cache, etc.)
-└── audio_files/ (optional) # Folder for test audio files
+app.py                  # FastAPI main application
+requirements.txt        # Dependencies
+README.md               # Documentation
+.gitignore              # Ignored files (venv, cache, etc.)
+audio_files/ (optional) # Folder for test audio files
 
 🧠 Errors Faced & Fixes
 <details> <summary>Click to expand</summary>
@@ -71,6 +71,7 @@ Step	Issue	Cause	Solution
 5	PowerShell venv issue	Could not activate	Use full path: .venv\Scripts\activate
 6	Pip version warning	Version check error	Ignored (non-critical)
 </details>
+
 📈 Future Improvements
 <details> <summary>Click to expand</summary>
 
@@ -85,6 +86,7 @@ Frontend interface for uploads & display
 Cloud deployment (AWS / Azure / Streamlit)
 
 </details>
+
 🧑‍💻 Author
 
 Abinaya Rajasekara — AI/ML Intern, HABB
