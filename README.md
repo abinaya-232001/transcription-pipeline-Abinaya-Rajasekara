@@ -35,7 +35,7 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 ## ⚙️ Setup Instructions
 
-```bash
+`bash
 # Clone repository
 git clone https://github.com/abinaya-232001/transcription-pipeline-Abinaya-Rajasekara.git
 cd transcription-pipeline-Abinaya-Rajasekara
@@ -50,8 +50,12 @@ pip install -r requirements.txt
 # Run FastAPI server
 uvicorn app:app --reload
 
+
+
+
 # Open Swagger UI to test API
 # Visit: http://127.0.0.1:8000/docs
+
 🧩 How It Works
 Upload an audio file via the /transcribe endpoint.
 
