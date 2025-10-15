@@ -7,6 +7,10 @@
 Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 ---
+<p align="center">
+  <img src="audio_gif.webp" width="600" alt="Audio transcription animation"/>
+</p>
+
 
 ## 🚀 Features
 
