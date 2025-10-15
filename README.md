@@ -87,7 +87,7 @@ Cloud deployment (AWS / Azure / Streamlit)
 </details>
 🧑‍💻 Author
 
-Abinaya Rajasekara — Intern, HABB
+Abinaya Rajasekara — AI/ML Intern, HABB
 GitHub: abinaya-232001
 
 ✅ Conclusion
