@@ -1,6 +1,9 @@
-# 🎧 Transcription Pipeline - Abinaya Rajasekara (Intern - HABB) 
+# 🎧 Transcription Pipeline - Abinaya Rajasekara (Intern - HABB)  
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.1.0-green?logo=fastapi&logoColor=white) 
+![Uvicorn](https://img.shields.io/badge/Uvicorn-0.22.0-purple?logo=uvicorn&logoColor=white) 
+![PyTorch](https://img.shields.io/badge/PyTorch-2.1.0-red?logo=pytorch&logoColor=white) 
+![Whisper](https://img.shields.io/badge/Whisper-1.0-orange?logo=openai&logoColor=white) 
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 **Speech-to-text API** using **FastAPI**, **Whisper**, and **PyTorch**.  
@@ -35,80 +38,23 @@ Upload audio files (`.wav`, `.mp3`) → get **transcribed text** in JSON format.
 
 ## ⚙️ Setup Instructions
 
-<details>
-<summary>Click to expand setup steps</summary>
+1. Clone the repository and navigate to it.  
+2. Create and activate a Python virtual environment.  
+3. Install dependencies from `requirements.txt`.  
+4. Run the FastAPI server.  
+5. Open Swagger UI to test the API at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).  
 
-```bash
-# Clone repository
-git clone https://github.com/abinaya-232001/transcription-pipeline-Abinaya-Rajasekara.git
-cd transcription-pipeline-Abinaya-Rajasekara
+---
 
-# Create & activate virtual environment
-python -m venv .venv
-.venv\Scripts\activate
+## 🧩 How It Works
 
-# Install dependencies
-pip install -r requirements.txt
+- Upload an audio file via the `/transcribe` endpoint.  
+- Whisper processes the audio.  
+- Returns a JSON response containing the transcription.
 
-# Run FastAPI server
-uvicorn app:app --reload
-
-# Open Swagger UI to test the API
-# Visit: http://127.0.0.1:8000/docs
-</details> ```
-
-
-
-# Open Swagger UI to test API
-# Visit: http://127.0.0.1:8000/docs
-
-🧩 How It Works
-Upload an audio file via the /transcribe endpoint.
-
-Whisper processes the audio.
-
-Returns a JSON response containing the transcription.
-
-Example Input: harvard.wav
-Example Output:
-
-json
-Copy code
+**Example Input:** `harvard.wav`  
+**Example Output:**
+```json
 {
   "text": "The stale smell of old beer lingers..."
 }
-📁 Folder Structure
-bash
-Copy code
-transcription-pipeline/
-├── app.py                  # FastAPI main application
-├── requirements.txt        # Dependencies
-├── README.md               # Documentation
-├── .gitignore              # Ignored files (venv, cache, etc.)
-└── audio_files/ (optional) # Folder for test audio files
-🧠 Errors Faced & Fixes
-Step	Issue	Cause	Solution
-1	Torch not using GPU	CUDA unavailable	Install GPU version: pip install torch --index-url https://download.pytorch.org/whl/cu121
-2	Dependency conflict	sympy version mismatch	Install compatible version: sympy==1.13.1
-3	Whisper not found	ModuleNotFoundError	Install: pip install openai-whisper
-4	App not starting	uvicorn missing	Install FastAPI & Uvicorn: pip install fastapi uvicorn
-5	PowerShell venv issue	Could not activate	Use full path: .venv\Scripts\activate
-6	Pip version warning	Version check error	Ignored (non-critical)
-
-📈 Future Improvements
-Real-time streaming transcription
-
-Speaker diarization (multi-voice detection)
-
-Multi-language transcription support
-
-Frontend interface for uploads & display
-
-Cloud deployment (AWS / Azure / Streamlit)
-
-🧑‍💻 Author
-Abinaya Rajasekara — Intern, HABB
-GitHub: abinaya-232001
-
-✅ Conclusion
-This project provides a robust and easy-to-use speech-to-text API. With FastAPI and Whisper integration, it supports GPU acceleration for efficient transcription and can be easily extended or deployed in pipelines, dashboards, or cloud environments.
