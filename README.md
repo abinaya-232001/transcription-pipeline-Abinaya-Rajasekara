@@ -1,4 +1,4 @@
-# 🎧 Transcription Pipeline - Abinaya Rajasekara (Intern - HABB)  
+# 🎧 Transcription Pipeline - Abinaya Rajasekara (AI/ML Engineer Intern - HABB)  
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.1.0-green?logo=fastapi&logoColor=white) 
 ![Uvicorn](https://img.shields.io/badge/Uvicorn-0.22.0-purple?logo=uvicorn&logoColor=white) 
